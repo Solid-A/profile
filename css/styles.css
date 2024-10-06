@@ -1,0 +1,493 @@
+/* إعادة تعيين جميع العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #002486;
+    color: #333;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* تنسيق العنوان (Header) */
+
+header {
+    height: 30rem;
+    background-image: url(../images/IMG_1486.JPG);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+header .container {
+    background-color: #ffffffe8;
+    border-radius: 0 5rem 5rem 0;
+    padding: 0.5rem;
+    width: 75%;
+    box-shadow: 0 0 5px 1px rgb(80, 80, 80);
+    text-align: center;
+}
+
+header .profile-pic {
+    margin-bottom: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 15px -170px ;
+    box-shadow: 0 0 10px 2px rgb(32, 32, 32);
+    transition: transform 0.5s ease-in-out;
+}
+
+header .profile-pic:hover {
+    transform: scale(1.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0px;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #c33b15;
+}
+
+/* قسم "حول" (About Section) */
+#about {
+    background-color: #c33b15;
+}
+
+#about h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: -1px -1px 1px black;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#about .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container .img {
+    width: 10%;
+    text-align: center;
+}
+
+#about .container .pro{
+    width: 55%;
+}
+
+#about p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 100%;
+    margin: 20px auto;
+    line-height: 1.6;
+    text-shadow: -1px -1px 1px black;
+}
+
+/* قسم "الخبرات" (Experience Section) */
+#experience {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    min-height: 43rem;
+}
+
+#experience .container {
+    position: relative;
+    text-align: center;
+    min-height: 35rem;
+}
+
+#experience h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.slider {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+    padding: 20px;
+    width: 80%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide.active {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+
+.slide .one {
+    width: 40%;
+}
+
+.slide .tow {
+    text-align: start;
+    line-height: 2rem;
+    width: 60%;
+    padding: 1rem;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 25rem;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
+}
+
+.slide h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #e8491d;
+}
+
+.slide h4 {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.slide .tow ul li {
+    font-size: 1rem;
+    color: #666;
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+
+/* أزرار التنقل للسلايد شو */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    width: 4rem;
+    height: 80%;
+    padding: 16px;
+    background-color: rgba(15, 15, 15, 0.856);
+    color: #b40606;
+    font-size: 2rem;
+    border: none;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(161, 2, 2, 0.8);
+    color: #ffffff;
+}
+
+/* أقسام المهارات والتعليم والتواصل */
+#skills, #education, #contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#skills h2, #education h2, #contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#skills ul li {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px auto;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#skills ul li ol {
+    font-weight: normal;
+}
+
+#education {
+    background-color: #002486;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#education .line {
+    border: 15px solid #ff2b2b;
+    height: 100%;
+} 
+
+#education .container {
+    color: #fff;
+    background-color: inherit;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    width: 35%;
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-shadow: -1px -1px 1px black;
+}
+
+#education .container * {
+    color: #fff;
+    text-shadow: -1px -1px 1px black;
+}
+
+#education .container hr {
+    border: 1px solid #ffffff;
+    margin: 1rem 1rem;
+    align-self: normal;
+}
+
+#interests {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 5rem 0px;
+    font-size: 1.5rem;
+}
+
+#interests .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 5rem;
+}
+
+#interests .container .int {
+    box-shadow: 0 0 5px 0px rgb(39, 39, 39);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 20%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(15deg);
+    transition: all 0.5s ease-in-out;
+    background-color: #ff6767;
+}
+
+
+#interests .container .int p {
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    transform: rotate(-15deg);
+    transition: all 0.5s ease-in-out;
+}
+
+#interests .container .int:hover {
+    transform: rotate(-15deg);
+}
+
+#interests .container .int p:hover {
+    transform: rotate(15deg);
+}
+
+#contact {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 -2px 5px 0 rgb(177, 177, 177);
+}
+
+#contact .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#contact .container div {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#contact .container div:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    /* width: 100%; */
+    background-color: #c33b15;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 1250px) {
+    .slide {
+        flex-direction: column;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .slide img {
+        margin: 0 auto 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #experience .container {
+        min-height: 35rem;
+    }
+
+    .slide.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .slide .one {
+        width: 100%;
+    }
+    
+    .slide .tow {
+        text-align: start;
+        line-height: 2rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #about .container .img {
+        display: none;
+    }
+
+    #about .container .pro{
+        width: 90%;
+    }
+
+    #education {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #education .container {
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: 60%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #interests .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #interests .container .int {
+        padding: 0.5rem;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .prev, .next {
+        width: 30px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #contact .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+}
