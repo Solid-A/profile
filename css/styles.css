@@ -8,7 +8,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #002486;
+    background-color: #3151a7;
+    /* background-color: #002486; */
     color: #333;
 }
 
@@ -136,7 +137,7 @@ header p {
 }
 
 .slider {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     overflow: hidden;
     background-color: #fff;
@@ -152,7 +153,7 @@ header p {
 }
 
 .slide.active {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -196,7 +197,6 @@ header p {
 }
 
 .slide .tow ul li {
-    font-size: 1rem;
     color: #666;
     list-style-type: decimal;
     list-style-position: outside;
@@ -269,7 +269,8 @@ header p {
 }
 
 #education {
-    background-color: #002486;
+    background-color: #3151a7;
+    /* background-color: #002486; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -388,7 +389,7 @@ footer p {
     .slide {
         flex-direction: column;
         text-align: center;
-        max-width: 80%;
+        max-width: 85%;
         margin: auto;
     }
 
@@ -417,14 +418,15 @@ footer p {
     }
 
     .slide .one {
-        width: 100%;
+        width: 80%;
     }
     
     .slide .tow {
         text-align: start;
         line-height: 2rem;
-        width: 100%;
+        width: 80%;
         padding: 1rem;
+        font-size: 0.9rem;
     }
 
     #about .container .img {
@@ -469,12 +471,25 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+
     header h1 {
         font-size: 1.8rem;
     }
 
     header p {
         font-size: 0.9rem;
+    }
+
+    .slide .tow {
+        padding: 0;
+    }
+
+    .slide .tow ul li {
+        width: 100%;
+        font-size: 0.8rem;
     }
 
     .prev, .next {
