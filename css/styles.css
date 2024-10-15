@@ -282,8 +282,11 @@ header p {
 }
 
 #education .line {
-    border: 15px solid #ff2b2b;
+    border: 15px solid #424242;
+    border-radius: 0.3rem;
     height: 100%;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px 5px white,0 0 40px 25px rgb(0, 255, 255);
 } 
 
 #education .container {
@@ -326,7 +329,7 @@ header p {
 }
 
 #interests .container .int {
-    box-shadow: 0 0 5px 0px rgb(39, 39, 39);
+    box-shadow: 0 0 3px 1px rgb(114, 114, 114);
     border-radius: 1rem;
     padding: 1rem;
     width: 15%;
@@ -336,7 +339,7 @@ header p {
     align-items: center;
     transform: rotate(15deg);
     transition: all 0.5s ease-in-out;
-    background-color: #2be6e6;
+    background-color: #49cdee;
 }
 
 
@@ -346,6 +349,7 @@ header p {
     padding-top: 8rem;
     transform: rotate(-15deg);
     transition: all 0.5s ease-in-out;
+    text-shadow: 0px 0px 2px white;
 }
 
 #interests .container .int:hover {
