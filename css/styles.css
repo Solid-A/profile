@@ -147,7 +147,7 @@ header p {
 .slide {
     display: none;
     padding: 20px;
-    width: 80%;
+    width: 90%;
     transition: transform 0.6s ease-in-out;
 }
 
@@ -166,7 +166,7 @@ header p {
 }
 
 .slide .tow {
-    text-align: start;
+    text-align: center;
     line-height: 2rem;
     width: 60%;
     padding: 1rem;
@@ -195,10 +195,16 @@ header p {
     text-align: center;
 }
 
+.slide .tow ul {
+    width: 80%;
+    margin: auto;
+}
+
 .slide .tow ul li {
     color: #666;
     list-style-type: decimal;
     list-style-position: outside;
+    text-align: start;
 }
 
 /* أزرار التنقل للسلايد شو */
@@ -427,6 +433,10 @@ footer p {
         font-size: 0.9rem;
     }
 
+    .slide .tow ul {
+        width: 100%;
+    }
+
     #about .container .img {
         display: none;
     }
@@ -481,8 +491,13 @@ footer p {
         font-size: 0.9rem;
     }
 
+    .slide .one {
+        width: 100%;
+    }
+
     .slide .tow {
         padding: 0;
+        width: 100%;
     }
 
     .slide .tow ul li {
@@ -502,5 +517,13 @@ footer p {
         justify-content: center;
         align-items: center;
         gap: 5rem;
+    }
+
+    .slide h3 {
+        font-size: 1.1rem;
+    }
+    
+    .slide h4 {
+        font-size: 0.9rem;
     }
 }
