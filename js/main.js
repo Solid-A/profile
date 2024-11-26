@@ -45,3 +45,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function showPhoneNumber() {
     alert("Phone Number: 01000746027");
 }
+
+
+let menu = document.getElementById('nav');
+    let offset = menu.offsetHeight;
+    window.onscroll = function() {
+        if (window.scrollY > 380) {
+            menu.style.position = "fixed";   
+            menu.style.top = "0";
+        } else {
+            menu.style.position = "relative";
+        }
+    }
