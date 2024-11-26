@@ -719,24 +719,24 @@ footer p {
 
     #experience .exp-container {
         width: 90%;
-        min-height: 85rem;
+        min-height: 65rem;
     }
 
     #experience {
         width: 100%;
-        min-height: 75rem;
+        min-height: 55rem;
     }
 
-    .slide .one {
+    .slide .exp-div1 {
         width: 100%;
     }
 
-    .slide .tow {
+    .slide .exp-div2 {
         padding: 0;
         width: 100%;
     }
 
-    .slide .tow ul li {
+    .slide .exp-div2 ul li {
         width: 100%;
         font-size: 0.8rem;
     }
