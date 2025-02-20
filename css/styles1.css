@@ -428,4 +428,14 @@ footer {
         top: 50%;
         transform: translateY(-50%);
     }
+
+    #nav {
+    Display: none;
+    }
+
+    .tech-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    }
 }
