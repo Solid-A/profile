@@ -261,7 +261,7 @@ section h2::after {
 /* Technical Skills Section */
 .tech-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
 }
 
