@@ -424,8 +424,12 @@ footer {
         text-align: center;
     }
 
+    .exp-container {
+        Width: 250px;
+    }
+
     .exp-div {
-    width: 80%;
+    width: 100%;
     min-width: 250px;
     }
 
