@@ -425,10 +425,10 @@ footer {
     }
 
     .exp-container {
-        Width: 270px;
+        Width: 260px;
     }
 
-    .exp-div {
+   .exp-container .exp-div {
     width: 100%;
     }
 
