@@ -428,10 +428,6 @@ footer {
         Width: 250px;
     }
 
-   .exp-container, .exp-div {
-    width: 100%;
-    }
-
     .prev, .next {
         top: 50%;
         transform: translateY(-50%);
