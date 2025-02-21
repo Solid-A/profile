@@ -9,6 +9,7 @@
 </head>
 <body>
 
+    <button id="to-top">Top</button>
     <header>
         <div id="head">
             <div class="h-container">
@@ -24,22 +25,14 @@
         </div>
     </header>
 
-    <nav id="nav">
-        <div id="nav-container">
-                <a href="#about">About me</a>
-                <a href="#experience">Professional Experience</a>
-                <a href="#technical-skills">Technical Skills</a>
-                <a href="#basics-skills">Basics of</a>
-                <a href="#digital-skills">Digital Skills</a>
-                <a href="#education">Education & Langaug</a>
-                <a href="#interests">Interests</a>
-                <a href="#contact">Contact</a>
-        </div>
+    <nav id="nav" class="navbar__menu">
+            <ul id="navbar__list"></ul>
     </nav>
     
     <main>
         
-        <section id="about">
+        <section id="about me" data-nav="About me">
+            <h2>About Me</h2>
             <div class="a-container">
                 <div class="a-div1">
                     <p>
@@ -52,7 +45,7 @@
             </div>
         </section>
 
-        <section id="experience">
+        <section id="experience" data-nav="Professional Experience">
             <h2>Professional Experience</h2>
             <div class="exp-container">
                 <div class="slide active">
@@ -76,7 +69,6 @@
                         <h3>Melting Furnaces Operator</h3>
                         <h4>Ferro Corporation</h4>
                         <h4>Jan 2015 – Apr 2022</h4>
-                        <hr style="border:1px solid black;">
                         <ul>
                             <li><b>Overseeing the operation of frit melting furnaces to produce high-quality frit materials.</b></li>
                             <li><b>Use control systems to track temperature, pressure, and other process variables.</b></li>
@@ -121,7 +113,7 @@
             </div>
         </section>
 
-        <section id="technical-skills">
+        <section id="technical-skills" data-nav="Technical Skills">
             <h2>Technical Skills</h2>
             <div class="tech-container">
                 <div class="tech-div">
@@ -209,7 +201,7 @@
             </div>
         </section>
 
-        <section id="basics-skills">
+        <section id="basics-skills" data-nav="Basics of">
             <div class="b-container">
                 <h2>Basics of</h2>
                 <div class="b-div1">
@@ -226,7 +218,7 @@
             </div>
         </section>
 
-        <section id="digital-skills">
+        <section id="digital-skills" data-nav="Digital Skills">
             <div class="container">
                 <h2>Digital Skills</h2>
                 <ul>
@@ -240,7 +232,7 @@
 
         
 
-        <section id="interests">
+        <section id="interests" data-nav="Interests">
             <h2>Interests</h2>
             <div class="container">
                 <div class="int">
@@ -255,12 +247,11 @@
             </div>
         </section>
 
-        <section id="education">
+        <section id="education" data-nav="Education & Langaug">
             <div class="container one">
                 <h2>Education</h2>
                 <p><b>75% | Electricity of cars, Al Mstqbal_Industrial Secondary School | 2005 – 2006</b></p>
             </div>
-            <hr class="line">
             <div class="container tow">
                 <h2>Langaug</h2>
                 <div>
@@ -273,14 +264,14 @@
 
 
 
-        <section id="contact">
+        <section id="contact" data-nav="Contact">
             <h2>Contact Information</h2>
             <div class="container">
                 <div><a href="mailto:solid.ahmed85@gmail.com"><img src="./icon/gmail (1).png" alt="Email"><h4>Gmail</h4></a></div>
                 <div><a href="mailto:solid.ahmed85@outlook.com"><img src="./icon/icons8-outlook-100.png" alt="Email"><h4>Outlook</h4></a></div>
                 <div><a href="mailto:ahmed_solid85@yahoo.com"><img src="./icon/icons8-yahoo-mail-app-100.png" alt="Email"><h4>Yahoo</h4></a></div>
                 <div><a href="https://www.linkedin.com/in/ahmed-farouk-ahmed" target="_blank"><img src="./icon/linkedin (1).png" alt="linkedin"><h4>Linkedin</h4></a></div>
-                <div><img src="./icon/smartphone.png" alt="phone number" onclick="showPhoneNumber()"><h4>Phone</h4></div>
+                <div onclick="showPhoneNumber()" style="cursor: pointer;"><img src="./icon/smartphone.png" alt="phone number"><h4>Phone</h4></div>
             </div>
         </section>
     </main>
