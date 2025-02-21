@@ -1,3 +1,34 @@
+
+// build the nav
+
+const selectUlNav = document.querySelector('#navbar__list');
+const selectSectoin = document.querySelectorAll('section');
+const myDocFrag = document.createDocumentFragment();    // Document Fragment
+
+const addSectoin = () => {
+    for(let item of selectSectoin){
+        let sectionId = item.getAttribute('id');
+        let sectionName = item.getAttribute('data-nav');
+        let addLi = document.createElement('li');
+        let addLink = document.createElement('a');
+        addLink.textContent = sectionName;
+        addLink.setAttribute('class', 'menu__link');
+        addLink.setAttribute('href', `#${sectionId}`);   // Scroll to section on link click
+        addLink.addEventListener('click', e =>{
+            e.preventDefault();
+            item.scrollIntoView({      // Scroll to anchor ID using scrollTO event
+                behavior: 'smooth'
+            });
+        })
+        addLi.appendChild(addLink);
+        myDocFrag.appendChild(addLi);
+    }
+    
+    selectUlNav.appendChild(myDocFrag);
+};
+addSectoin();
+
+
 // Experience Slider Functionality
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
@@ -75,3 +106,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 100);
 });
+
+//Add a scroll to the top button
+
+const toTop = document.querySelector('#to-top');
+
+document.addEventListener('scroll', () =>{ 
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
+        toTop.style.display = 'block';
+    }else{
+        toTop.style.display = 'none';
+    }
+})
+
+toTop.addEventListener('click', ()=>{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
