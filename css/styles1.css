@@ -22,6 +22,7 @@ a:hover {
 }
 
 #to-top{
+    display: none;
     position: fixed;
     bottom: 120px;
     right: 50px;
@@ -130,7 +131,7 @@ header {
     font-weight: 600;
     text-decoration: none;
     color: rgb(29, 29, 29);
-    text-shadow: 0px 0px 1px rgb(59, 59, 59);
+    text-shadow: 0px 0px 1px rgb(39, 39, 39);
     transition: ease 0.3s all;
 }
 
@@ -138,6 +139,7 @@ header {
     color: rgb(240, 240, 240);
     background-color: rgb(199, 0, 0);
     transition: ease 0.3s all;
+    box-shadow: 0px 0px 5px 1px rgb(22, 22, 22);
 }
 
 /* Sections */
@@ -481,5 +483,5 @@ footer {
     #nav {
         display: none;
     }
- 
+
 }
