@@ -22,6 +22,7 @@ a:hover {
 }
 
 #to-top{
+    display: none;
     position: fixed;
     bottom: 120px;
     right: 50px;
@@ -112,7 +113,6 @@ header {
     z-index: 1000;
 }
 
-<<<<<<< HEAD
 .navbar__menu ul {
     display: flex;
     justify-content: center;
@@ -123,20 +123,6 @@ header {
 
 .navbar__menu li {
     list-style: none;
-=======
-#nav-container {
-    max-width: 900px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-}
-
-#nav-container a {
-    color: #fff;
-    padding: 10px 5px;
-    transition: background-color 0.3s ease;
->>>>>>> 918798a (neo+)
 }
 
 .navbar__menu .menu__link {
@@ -147,7 +133,7 @@ header {
     font-weight: 600;
     text-decoration: none;
     color: rgb(29, 29, 29);
-    text-shadow: 0px 0px 1px rgb(59, 59, 59);
+    text-shadow: 0px 0px 1px rgb(39, 39, 39);
     transition: ease 0.3s all;
 }
 
@@ -155,6 +141,7 @@ header {
     color: rgb(240, 240, 240);
     background-color: rgb(199, 0, 0);
     transition: ease 0.3s all;
+    box-shadow: 0px 0px 5px 1px rgb(22, 22, 22);
 }
 
 /* Sections */
@@ -245,14 +232,8 @@ section h2::after {
 
 .exp-div {
     flex: 2;
-<<<<<<< HEAD
     background: linear-gradient(135deg, #ffffffcc, #ffffff9d);
     min-width: 250px;
-=======
-    background: linear-gradient(135deg, #ffffffd8, #ffffffb4);
-    /* width: 50%; */
-    min-width: 300px;
->>>>>>> 918798a (neo+)
     min-height: 500px;
     border-radius: 10px;
     padding: 20px;
@@ -461,11 +442,7 @@ footer {
 }
 
 /* Responsive Design */
-<<<<<<< HEAD
 @media (max-width: 750px) {
-=======
-@media (max-width: 831px) {
->>>>>>> 918798a (neo+)
     .h-container, .a-container, .exp-container, .tech-container, .b-container, .container {
         flex-direction: column;
         align-items: center;
@@ -476,24 +453,12 @@ footer {
     }
 
     .tech-container {
-<<<<<<< HEAD
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-=======
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    #nav {
-        display: none;
->>>>>>> 918798a (neo+)
     }
 
     .exp-div h3, .exp-div h4{
         width: 90%;
         text-align: center;
-<<<<<<< HEAD
-=======
-        text-wrap: nowrap;
->>>>>>> 918798a (neo+)
     }
     
 
@@ -513,7 +478,6 @@ footer {
     .exp-div ul li{
         width: 90%;
     }
-<<<<<<< HEAD
 }
 
 @media (max-width: 600px) {
@@ -521,8 +485,5 @@ footer {
     #nav {
         display: none;
     }
- 
+
 }
-=======
-}
->>>>>>> 918798a (neo+)
