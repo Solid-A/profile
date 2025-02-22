@@ -1,6 +1,6 @@
 
 // build the nav
-
+const toTop = document.querySelector('#to-top');
 const selectUlNav = document.querySelector('#navbar__list');
 const selectSectoin = document.querySelectorAll('section');
 const myDocFrag = document.createDocumentFragment();    // Document Fragment
@@ -109,14 +109,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Add a scroll to the top button
 
-const toTop = document.querySelector('#to-top');
+
 
 document.addEventListener('scroll', () =>{ 
     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
         toTop.style.display = 'block';
-    }else{
+    } else {
         toTop.style.display = 'none';
     }
+ 
 })
 
 toTop.addEventListener('click', ()=>{
