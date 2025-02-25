@@ -28,6 +28,28 @@ const addSectoin = () => {
 };
 addSectoin();
 
+// Add class 'active' to section when near top of viewport
+function makeActive(){
+    selectSectoin.forEach(active =>{
+        const activeView = active.getBoundingClientRect();
+        let selectNames = active.getAttribute('data-nav');
+        if(activeView.top <= 150 && activeView.bottom >= 300){
+            active.classList.add('active-class');
+            const selectLinks = document.querySelectorAll('a');
+            selectLinks.forEach(classLink =>{    // Set sections as active
+                if(classLink.textContent === selectNames){
+                    classLink.classList.add('active-link');
+                }else{
+                    classLink.classList.remove('active-link');
+                }
+            })
+        }else{
+            active.classList.remove('active-class');
+        }
+    })
+}
+document.addEventListener("scroll", function() { makeActive();});
+
 
 // Experience Slider Functionality
 let currentSlide = 0;
@@ -112,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('scroll', () =>{ 
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
+    if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900){
         toTop.style.display = 'block';
     } else {
         toTop.style.display = 'none';

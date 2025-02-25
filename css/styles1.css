@@ -25,16 +25,18 @@ a:hover {
     display: none;
     position: fixed;
     bottom: 120px;
-    right: 50px;
+    right: 1%;
     z-index: 999;
-    background: linear-gradient(100deg, #002d5a, #4185c9);
-    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0), 0px 0px 3px 1px rgb(255, 255, 255) inset;
-    color: rgb(255, 255, 255); 
     padding: 15px; 
     border: none;
     border-radius: 5px; 
     cursor: pointer;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    background-color: rgb(199, 0, 0);
+    box-shadow: 0px 0px 5px 2px rgb(22, 22, 22);
+    transition: ease 0.3s all;
 }
 
 button{
@@ -106,8 +108,8 @@ header {
 /* Navigation */
 
 .navbar__menu{
-    background-color: #e7e7e7;
-    box-shadow: 0px 3px 5px 0px rgb(56, 56, 56);
+    background-color: #d6d6d6;
+    box-shadow: 0px 0px 3px 1px rgb(146, 146, 146);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -115,8 +117,9 @@ header {
 
 .navbar__menu ul {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
 }
 
 .navbar__menu li {
@@ -136,6 +139,13 @@ header {
 }
 
 .navbar__menu .menu__link:hover {
+    color: rgb(240, 240, 240);
+    background-color: rgb(199, 0, 0);
+    transition: ease 0.3s all;
+    box-shadow: 0px 0px 5px 1px rgb(22, 22, 22);
+}
+
+.menu__link.active-link {
     color: rgb(240, 240, 240);
     background-color: rgb(199, 0, 0);
     transition: ease 0.3s all;
@@ -171,20 +181,29 @@ section h2::after {
 
 .a-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    /* gap: 20px; */
     flex-wrap: wrap;
 }
 
 .a-div1 {
     flex: 2;
+    width: 80%;
     min-width: 250px;
     font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.a-div1 p {
+    width: 95%;
 }
 
 .a-div1 span {
     font-weight: bold;
     color: #db3434;
+    font-size: 1.2em;
 }
 
 .a-div2 {
@@ -392,6 +411,7 @@ section h2::after {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
     text-align: center;
+    margin: 100px auto;
 }
 
 #education div {
