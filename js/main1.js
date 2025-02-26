@@ -33,7 +33,7 @@ function makeActive(){
     selectSectoin.forEach(active =>{
         const activeView = active.getBoundingClientRect();
         let selectNames = active.getAttribute('data-nav');
-        if(activeView.top <= 150 && activeView.bottom >= 300){
+        if(activeView.top <= 300){
             active.classList.add('active-class');
             const selectLinks = document.querySelectorAll('a');
             selectLinks.forEach(classLink =>{    // Set sections as active
