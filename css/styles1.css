@@ -534,4 +534,8 @@ footer {
         right: 5%;
     }
 
+    .t-div{
+        flex-direction: column;
+    }
+
 }
