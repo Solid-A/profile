@@ -32,10 +32,10 @@ a:hover {
     border-radius: 5px; 
     cursor: pointer;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(204, 204, 204);
     text-shadow: 0px 0px 2px rgb(0, 0, 0);
     background-color: rgb(199, 0, 0);
-    box-shadow: 0px 0px 5px 2px rgb(22, 22, 22);
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0);
     transition: ease 0.3s all;
 }
 
@@ -107,19 +107,28 @@ header {
 
 /* Navigation */
 
-.navbar__menu{
-    background-color: #e9e9e9;
-    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0);
+i img{
+    width: 36px;
+    height: 36px;
+    display: none;
+}
+
+
+.navbar__menu {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .navbar__menu ul {
+    background-color: #ffffff;
+    /* background-color: #e9e9e9; */
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0);
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0;
+    margin: auto;
 }
 
 .navbar__menu li {
@@ -128,28 +137,32 @@ header {
 
 .navbar__menu .menu__link {
     display: flex;
+    text-align: center;
     justify-content: center;
-    padding: 0.5em;
-    margin-left: 10px;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 1rem;
     font-weight: 600;
     text-decoration: none;
-    color: rgb(29, 29, 29);
-    text-shadow: 0px 0px 1px rgb(39, 39, 39);
+    color: rgb(0, 0, 0);
+    /* text-shadow: 0px 0px 1px rgb(221, 221, 221); */
     transition: ease 0.3s all;
 }
 
 .navbar__menu .menu__link:hover {
-    color: rgb(240, 240, 240);
-    background-color: rgb(199, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 25, 25);
     transition: ease 0.3s all;
-    box-shadow: 0px 0px 5px 1px rgb(22, 22, 22);
+    box-shadow: 0px 0px 5px 1px rgb(209, 202, 202);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
 .menu__link.active-link {
-    color: rgb(240, 240, 240);
-    background-color: rgb(199, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: #ff0000c9;
     transition: ease 0.3s all;
     box-shadow: 0px 0px 5px 1px rgb(22, 22, 22);
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
 /* Sections */
@@ -183,27 +196,24 @@ section h2::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .a-div1 {
     flex: 2;
-    width: 80%;
     min-width: 250px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-align: center;
+    font-weight: 600;
+    text-align:start;
 }
 
 .a-div1 p {
-    width: 95%;
+    width: 100%;
 }
 
 .a-div1 span {
-    font-weight: bold;
     color: #db3434;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .a-div2 {
@@ -232,7 +242,7 @@ section h2::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0 4px 8px rgba(34, 34, 34, 0.562);
+    box-shadow: 0 0px 8px 2px rgb(0, 0, 0);
 }
 
 .slide {
@@ -333,14 +343,14 @@ section h2::after {
 /* Training Section */
 .t-container {
     background: linear-gradient(135deg, #002d5a, #4185c9);
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.904);
 }
 
 .t-container h2 {
-    color: #fff;
+    color: #ffffff;
 }
 
 .t-div {
@@ -395,7 +405,7 @@ section h2::after {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 4px 8px 1px rgba(48, 48, 48, 0.897);
     text-align: center;
     flex: 1;
     min-width: 200px;
@@ -410,27 +420,28 @@ section h2::after {
 /* Education Section */
 #education {
     background: linear-gradient(180deg, #002d5a, #4185c9);
-    color: #fff;
-    padding: 20px;
+    color: #ffffff;
+    padding: 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
+    box-shadow: 0 4px 8px 0px rgb(78, 78, 78);
     text-align: center;
     margin: 100px auto;
 }
 
 #education div {
     margin: 50px;
+    padding: 20px;
 }
 
 #education h2 {
-    color: #fff;
+    color: #ffffff;
 }
 
-/* Langaug Section */
+/* Language Section */
 
-#langaug {
+#language {
     background: linear-gradient(180deg, #002d5a, #4185c9);
-    color: #fff;
+    color: #ffffff;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534);
@@ -438,12 +449,13 @@ section h2::after {
     margin: 100px auto;
 }
 
-#langaug div {
+#language .container{
     margin: 50px;
+    padding: 0px;
 }
 
-#langaug h2 {
-    color: #fff;
+#language h2 {
+    color: #ffffff;
 }
 
 /* Contact Section */
@@ -485,7 +497,7 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
     .h-container, .a-container, .exp-container, .tech-container, .b-container, .container {
         flex-direction: column;
         align-items: center;
@@ -523,10 +535,36 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+
+    i img{
+        display: inline-block;
+        margin-left: 80%;
+        background-color:#333;
+    }
 
     #nav {
+        width: 50%;
+        left: 50%;
+    }
+    
+    .navbar__menu ul {
         display: none;
+        margin: 0;
+        padding: 0%;
+}
+    .navbar__menu li {
+        justify-self: start;
+        padding: 0%;
+        width: 100%;
+        border-bottom: 1px solid #33333350;
+    }
+
+    .navbar__menu .menu__link {
+        padding: 0rem;
+        margin: 0;
+        text-align: center;
+
     }
 
     #to-top{
