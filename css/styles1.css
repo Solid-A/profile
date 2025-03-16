@@ -107,13 +107,6 @@ header {
 
 /* Navigation */
 
-i img{
-    width: 36px;
-    height: 36px;
-    display: none;
-}
-
-
 .navbar__menu {
     position: sticky;
     top: 0;
